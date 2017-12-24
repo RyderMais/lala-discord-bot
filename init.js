@@ -22,14 +22,20 @@ client.on('ready', () => {
   client.user.setGame('Love Ritmo Brasil');
 });
 
+// Listen
 client.on('message', message => {
   if (message.content === 'ping') {
     message.reply('pong');
   }
+  if (message.content === 'meu avatar') {
+    message.reply(message.author.avatarURL);
+  }
 });
-if (command === "ping") {
-  const m = await message.channel.send("Ping?");
-  m.edit(`Pong! A mensagem chegou em ${m.createdTimestamp - message.createdTimestamp}ms (sendo ${Math.round(client.ping)}ms de processamento e retorno.)`);
-}
+client.on('guildMemberAdd', member => {
+  const channel = member.guild.channels.find('name', 'member-log');
+  if (!channel) return;
+  channel.send(`Olá, ${member}! Tudo bem?`, `Esperamos que aproveite a experiência! ^-^`);
+});
 
+// Start
 client.login(process.env.DISCORDBOT_TOKEN);
