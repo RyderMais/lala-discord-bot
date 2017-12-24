@@ -5,6 +5,8 @@ const client = new Discord.Client({
   owner: '269803975090372608',
   disableEveryone: true
 });
+const args = message.content.slice(client.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
 
 client.registry
   .registerDefaultTypes()
