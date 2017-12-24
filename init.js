@@ -3,8 +3,8 @@ const client = new Discord.Client();
 
 // Connect
 client.on('ready', () => {
-  console.log("Logado! %s - %s");
-  client.user.setGame('Love Ritmo Brasil');
+  console.log("Logado!");
+  client.user.setGame("Love Ritmo Brasil");
 });
 client.on('disconnected', function () {
   console.log("Saindo...");
