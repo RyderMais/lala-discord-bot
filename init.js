@@ -6,6 +6,7 @@ client.on('ready', () => {
   console.log("Logado!");
   client.send("@Bryceed#8168", "Bot inicializado.")
   client.user.setGame('🕺🏻 Love Ritmo Brasil');
+});
 client.on('disconnected', function () {
   console.log("Saindo...");
   process.exit(1); 
