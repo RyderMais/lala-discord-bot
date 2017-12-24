@@ -4,7 +4,13 @@ const client = new Discord.Client();
 // Connect
 client.on('ready', () => {
   console.log("Logado!");
-  client.user.setGame("Love Ritmo Brasil");
+  client.sendMessage("@Bryceed#8168", "Bot inicializado.");
+  client.user.setPresence({ 
+    game: {
+      name: 'Love Ritmo Brasil',
+      type: 0
+    }
+  });
 });
 client.on('disconnected', function () {
   console.log("Saindo...");
