@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client({
-  commandPrefix: DISCORDBOT_PREFIX,
+  commandPrefix: process.env.DISCORDBOT_PREFIX,
   unknownCommandResponse: false,
   owner: '269803975090372608',
   disableEveryone: true
