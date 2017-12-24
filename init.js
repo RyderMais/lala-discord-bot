@@ -1,8 +1,5 @@
 const Discord = require('discord.js');
-const client = new Discord.Client({});
-
-// Parameters
-client.setPrefix('global', '+');
+const client = new Discord.Client();
 
 // Connect
 client.on('ready', () => {
