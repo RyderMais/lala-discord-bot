@@ -19,11 +19,6 @@ client.on('message', message => {
     message.reply(message.author.avatarURL);
   }
 });
-client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find('name', 'member-log');
-  if (!channel) return;
-  channel.send(`Olá, ${member}! Tudo bem?`, `Esperamos que aproveite a experiência! ^-^`);
-});
 
 // Start
 client.login(process.env.DISCORDBOT_TOKEN);
