@@ -1,13 +1,12 @@
 const Discord = require('discord.js');
-const client = new Discord.Client({
-  commandPrefix: '+',
-  unknownCommandResponse: false,
-  owner: '269803975090372608',
-  disableEveryone: true
-});
+const client = new Discord.Client({});
 
+// Parameters
+client.setPrefix('global', '+');
+
+// Connect
 client.on('ready', () => {
-  client.sendMessage("@Bryceed#8168", "Hello!");
+  client.sendMessage('@Bryceed#8168', "Hello!");
   client.user.setGame('Love Ritmo Brasil');
 });
 
