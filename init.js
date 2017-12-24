@@ -8,15 +8,6 @@ const client = new Discord.Client({
 const args = message.content.slice(client.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 
-client.registry
-  .registerDefaultTypes()
-  .registerGroups([
-    ['other', 'Comandos diversificados']
-  ])
-  .registerDefaultGroups()
-  .registerDefaultCommands()
-  .registerCommandsIn(path.join(__dirname, 'commands'));
-
 client.on('ready', () => {
   console.log('Bot inicializado!');
   client.user.setGame('Love Ritmo Brasil');
