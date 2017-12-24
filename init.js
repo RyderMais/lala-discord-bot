@@ -6,9 +6,9 @@ client.on('ready', () => {
   console.log("Logado! %s - %s");
   client.user.setGame('Love Ritmo Brasil');
 });
-bot.on('disconnected', function () {
-    console.log("Saindo...");
-    process.exit(1); 
+client.on('disconnected', function () {
+  console.log("Saindo...");
+  process.exit(1); 
 });
 
 // Listen
