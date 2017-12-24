@@ -1,0 +1,13 @@
+{
+  "name": "Lalabot",
+  "description": "Discord Bot (by RyderMais)",
+  "version": "0.1.0",
+  "main": "init.js",
+  "scripts": {
+    "start": "node init.js"
+  },
+  "dependencies": {
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
+  }
+}
