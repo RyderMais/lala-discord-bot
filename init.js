@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const Discord = require('discord.js-commando');
 const client = new Discord.Client();
 
 // Connect
