@@ -12,9 +12,6 @@ client.on('ready', () => {
 
 // Listen
 client.on('message', message => {
-  if (message.content === 'ping') {
-    message.reply('pong');
-  }
   if (message.content === 'meu avatar') {
     message.reply(message.author.avatarURL);
   }
