@@ -9,6 +9,10 @@ client.on('ready', () => {
   client.sendMessage('@Bryceed#8168', "Hello!");
   client.user.setGame('Love Ritmo Brasil');
 });
+bot.on('disconnected', function () {
+    console.log("Saindo...");
+    process.exit(1); 
+});
 
 // Listen
 client.on('message', message => {
