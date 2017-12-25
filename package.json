@@ -4,10 +4,18 @@
   "version": "0.1.7",
   "main": "init.js",
   "scripts": {
+    "test": "echo \"Testing: 1, 2, 3...\" && exit 1",
     "start": "node init.js"
   },
   "dependencies": {
-    "discord.js": "11.2.1",
-    "request": "2.81.0"
+    "discord.js": "*",
+    "request": "*",
+    "bufferutil": "*",
+    "erlpack": "*",
+    "node-opus": "*",
+    "opusscript": "*",
+    "sodium": "*",
+    "libsodium-wrappers": "*",
+    "uws": "*"
   }
 }
