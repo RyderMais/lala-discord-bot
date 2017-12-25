@@ -9,11 +9,11 @@ const port = process.env.DISCORDBOT_WEBPORT;
 
 // Connect
 client.on('ready', () => {
-  client.user.setGame('🕺🏻 Love Ritmo Brasil');
-  client.sendMessage("@Bryceed#8168", "Bot inicializado.");
+  client.setStatus('online', '🕺🏻 Love Ritmo Brasil');
+  client.sendMessage('@Bryceed', 'Bot inicializado.');
 });
 client.on('disconnected', function () {
-  console.log("Saindo...");
+  console.log('Saindo...');
   process.exit(1); 
 });
 
