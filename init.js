@@ -26,8 +26,8 @@ client.on('message', msg => {
   const command = msg.content.split(' ')[0].substr(process.env.DISCORDBOT_PREFIX.length);
   const args = msg.content.split(' ').slice(1).join(' ');
   if (command === 'versão' || 'version') return msg.channel.send(process.env.DISCORDBOT_VERSION);
-  else if (command === 'invite') return msg.channel.send(process.env.DISCORDBOT_INVITE);
-  if (msg.content === 'meu avatar') return  msg.reply(message.author.avatarURL);
+  else if (command === 'convite' || 'invite') return msg.channel.send(process.env.DISCORDBOT_INVITE);
+  if (msg.content === 'meu avatar') return msg.reply(message.author.avatarURL);
 });
 
 // Wake up, bot!
