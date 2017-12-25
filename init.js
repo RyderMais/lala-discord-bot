@@ -37,7 +37,7 @@ app.get('/', (request, response) => {
     response.render('index');
 });
 app.listen(port, () => {
-    console.log('App funcionando em [http://localhost:' + port + '].);
+    console.log('App funcionando em [http://localhost:' + port + '].');
 });
 setInterval(() => {
   http.get('http://lala-discordbot.herokuapp.com');
